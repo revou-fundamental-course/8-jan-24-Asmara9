@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persegi Calculator</title>
+    <title>Luas dan Keliling Persegi</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Luas Persegi</h1>
+        <h1>Katik <span>Kalkulator Matematik</span></h1>
     </header>
     <div class="container">
         <img src="persegi.jpg" alt="persegi">
@@ -19,18 +19,33 @@
         <p align="left" id="formula">Dimana:</p>
         <p align="left" id="formula">L = Luas</p>
         <p align="left" id="formula">S = Sisi</p>
-        <h2>Hitung Luas Persegi</h2>
+
+        <p align="left" id="formula">Rumus Keliling Persegi Yaitu:</p>
+        <p align="left" id="formula">K = 4 × S</p>
+
+        <p align="left" id="formula">Dimana:</p>
+        <p align="left" id="formula">K = Keliling</p>
+        <p align="left" id="formula">S = Sisi</p>
+
+        <h2>Hitung Luas dan Keliling Persegi</h2>
         <label for="sideLength">Panjang Sisi:</label>
         <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
         <button onclick="hitungLuas()">Hitung Luas</button>
+        <button onclick="hitungKeliling()">Hitung Keliling</button>
         <p align="left">L = S x S<span></span></p>
         <p align="left">L = <span id="sisi"></span></p>
-        <p align="left" id="result">L = <span id="luas"></span></p>
+        <p align="left">L = <span id="luas"></span></p>
+        <p align="left">K = 4 x S<span></span></p>
+        <p align="left">K = <span id="Sisi"></span></p>
+        <p align="left">K = <span id="keliling"></span></p>
+
         <!-- Tombol reset -->
         <button class="reset" onclick="resetForm()">Reset</button>
 
     </div>
-
+    <footer>
+        <p>&copy; 2024 Candrasa Asmaradanta</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
